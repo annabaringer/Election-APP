@@ -27,15 +27,86 @@
 			$.mobile.silentScroll(0);
 			$.mobile.changePage.defaults.transition = 'slide';
 		});
+
 	</script>
+	<style>
+		* {
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 
+			"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		}
+	
+		#listImg {
+			position:absolute; 
+			top:0; 
+			bottom:0; 
+			left:20; 
+			margin:auto;
+		}
+		
+		#bioImg {
+			top:0;
+			bottom:0;
+			left:20;
+			max-height: auto;
+			max-width:120;
+		}
+		
+		#bioHead {
+			text-align: center;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		}
+		
+		#bioP {
+			font-size: 11px;
+		}
+		
+		#logoC {
+			display: block;
+			position: auto;
+			max-height: 200;
+			max-width: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		h1 {
+			text-align: center;
+			font-family: "Arial Black", Gadget, sans-serif
+		}
+		
+		#startButtons {
+			display: block;
+			text-align:center;
+		}
+		
+		#startText {
+			text-align:center;
+			
+		}
+		
+	</style>
+	
 </head>
 <body>
-<div id="home" data-role="page">
-    
+<div id="home" data-role="page" data-theme="a">
+    <div>
+		<h1>Pocket Poll</h1>
+	</div>
+	
+	<div id="startText">
+		<h2>Government. Life. Balanced.</h2>
+		<h3>Change at your fingertips.</h3>
+		<h3>Start now.</h3>
+	</div>
+	
     <div data-role="content ">
-        <p>
-            <a href="#map">Start (go to map)</a>
-        </p>
+		<div >
+			<img src="logo.png" id="logoC">
+		</div>
+			<div id="startButtons">
+				<a href="#map" data-role="button" data-theme="c" class=" ui-btn-inline">English</a>
+				<a href="#map" data-role="button" data-theme="c" class=" ui-btn-inline">Spanish</a>
+			</div>
     </div>
 	
 </div>
@@ -46,6 +117,7 @@
         <p>
             <a href="#current">imagine a map here...</a>
         </p>
+		
     </div>
 	
 </div>
@@ -57,14 +129,104 @@
     </div> <!--/header-->
 	
     <div data-role="content">
-        <p>content1</p>
+        <ul data-role="listview">
+			<li>
+			<a href="#Bioinfo">
+			<img src = "url.jpg" id="listImg">
+			<h2>Some Guy</h2>
+			<p>Description of the man</p>
+			<p>Party:</p>
+			<p>Position:</p>
+			</a></li>
+			
+			<li>
+			<a href="">
+			<img src = "john.jpg" id="listImg">
+			<h2>Another Guy</h2>
+			<p>Description of the man</p>
+			<p>Party:</p>
+			<p>Position:</p>
+			</a></li>
+			
+			<li>
+			<a href="">
+			<img src = "man.jpg" id="listImg">
+			<h2>More Men</h2>
+			<p>Description of the man</p>
+			<p>Party:</p>
+			<p>Position:</p>
+			</a></li>
+			
+			<li>
+			<a href="">
+			<img src = "man.jpg" id="listImg">
+			<h2>More Men</h2>
+			<p>Description of the man</p>
+			<p>Party:</p>
+			<p>Position:</p>
+			</a></li>
+			
+			<li>
+			<a href="">
+			<img src = "man.jpg" id="listImg">
+			<h2>More Men</h2>
+			<p>Description of the man</p>
+			<p>Party:</p>
+			<p>Position:</p>
+			</a></li>
+			
+			<li>
+			<a href="">
+			<img src = "man.jpg" id="listImg">
+			<h2>More Men</h2>
+			<p>Description of the man</p>
+			<p>Party:</p>
+			<p>Position:</p>
+			</a></li>
+			
+			<li>
+			<a href="">
+			<img src = "man.jpg" id="listImg">
+			<h2>More Men</h2>
+			<p>Description of the man</p>
+			<p>Party:</p>
+			<p>Position:</p>
+			</a></li>
+			
+			<li>
+			<a href="">
+			<img src = "man.jpg" id="listImg">
+			<h2>More Men</h2>
+			<p>Description of the man</p>
+			<p>Party:</p>
+			<p>Position:</p>
+			</a></li>
+			
+			<li>
+			<a href="">
+			<img src = "man.jpg" id="listImg">
+			<h2>More Men</h2>
+			<p>Description of the man</p>
+			<p>Party:</p>
+			<p>Position:</p>
+			</a></li>
+			
+			<li>
+			<a href="">
+			<img src = "man.jpg" id="listImg">
+			<h2>More Men</h2>
+			<p>Description of the man</p>
+			<p>Party:</p>
+			<p>Position:</p>
+			</a></li>
+		</ul>
     </div>
 	
     <div data-role="footer" data-position="fixed" data-theme="d">
         <div data-role="navbar">
             <ul>
 				<li><a href="#map" data-role="tab">Home</a></li>
-                <li><a href="#current" data-role="tab" class="ui-btn-active">Officials</a></li>
+                <li><a href="#current" data-role="tab" class="ui-btn-active"">Officials</a></li>
                 <li><a href="#cand" data-role="tab">Candidates</a></li>
                 <li><a href="#poll" data-role="tab">Find Poll</a></li>
 				<li><a href="#more" data-role="tab">More</a></li>
@@ -79,9 +241,7 @@
         <h1>Candidates</h1>
     </div>
 	
-    <div data-role="content">
-        <p>content 2</p>
-    </div>
+
 	
     <div data-role="footer" data-position="fixed" data-theme="d">
         <div data-role="navbar">
@@ -125,6 +285,9 @@
     <div data-role="content">
         <p>Page 4 content</p>
     </div>
+	
+	
+	
     <div data-role="footer" data-position="fixed" data-theme="d">
         <div data-role="navbar">
             <ul>
@@ -133,6 +296,66 @@
                 <li><a href="#cand" data-role="tab">Candidates</a></li>
 				<li><a href="#poll" data-role="tab">Find poll</a></li>
                 <li><a href="#more" data-role="tab" class="ui-btn-active">More</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="Bioinfo" data-role="page">
+    <div data-role="header" data-theme="d">
+        <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse">Back</a>
+        <h1>Some Guy</h1>
+    </div>
+	<div>
+		<div data-role="content" style="float: left">
+			<img src="man.jpg" id="bioImg">
+		</div>
+		
+		<div data-role="content">
+			<div style="float: right;">
+				<p id="bioP"><strong>Full name:</strong> Joe Jim</p>
+				<p id="bioP"><strong>Office:</strong> The man, democratic </p>
+				<p id="bioP"><strong>First Elected:</strong> 2014</p>
+				<p id="bioP"><strong>Gender:</strong> Male obvi</p> 
+				<p id="bioP"><strong>Birth Date:</strong> old</p>
+				<p id="bioP"><strong>Birth Place:</strong> suburbs</p>
+				<p id="bioP"><strong>Home City:</strong> somewhere in FL</p>
+				<p id="bioP"><strong>Religion:</strong> Christian obvi</p>
+			</div>
+		</div>
+	</div>
+	
+		<div data-role="collapsible">
+			<h3>Education</h3>
+			<p>some college</p>
+		</div>
+		
+		<div data-role="collapsible">
+			<h3>Political Experience</h3>
+			<p>role and dates</p>
+			<p>more role and dates</p>
+		</div>
+		
+		<div data-role="collapsible">
+			<h3>Professional Experience</h3>
+			<p>role and dates</p>
+			<p>more role and dates</p>
+		</div>
+		
+		<div data-role="collapsible">
+			<h3>Organizations</h3>
+			<p>role and dates</p>
+			<p>more role and dates</p>
+		</div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+        <div data-role="navbar">
+            <ul>
+				<li><a href="#map" data-role="tab">Home</a></li>
+                <li><a href="#current" data-role="tab">Officials</a></li>
+                <li><a href="#cand" data-role="tab">Candidates</a></li>
+				<li><a href="#poll" data-role="tab">Find poll</a></li>
+                <li><a href="#more" data-role="tab">More</a></li>
             </ul>
         </div>
     </div>
