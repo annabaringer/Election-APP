@@ -1,0 +1,618 @@
+.spacer-USA{
+  height: 10px;
+}
+
+@media (min-width: 320px) and (min-height: 200px) {
+  .spacer-USA{
+    height: 10px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 500px) {
+  .spacer-USA{
+    height: 50px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 600px) {
+  .spacer-USA{
+    height: 75px;
+  }
+}
+
+@media (min-width: 1280px) and (min-height: 700px) {
+  .spacer-USA{
+    height: 150px;
+  }
+}
+
+@media (min-width: 1440px) and (min-height: 800px) {
+  .spacer-USA{
+    height: 200px;
+  }
+}
+
+
+.USA{
+  margin: 0px;
+  line-height: 2.1428571435;
+  min-height: 100%;
+  position: relative;
+}
+
+.USA h1,
+.USA .h1 {
+  font-family: "Gotham Rounded Light", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  line-height: 1;
+  margin-left: -2px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+}
+
+.USA p {
+  font-size: 22px;
+  line-height: 1.3;
+  color: #ffffff;
+  font-family: "Gotham Rounded Book", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  opacity: .8;
+  margin-bottom: 15px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+}
+
+.USA em {
+  font-family: Georgia, serif;
+  color: #8bc5eb;
+  font-size: 16px;
+  opacity: 1;
+}
+
+.USA .small {
+  font-size: 14px;
+}
+
+@media (min-width: 320px) and (min-height: 400px) {
+  .USA h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .USA p {
+    font-size: 16px;
+  }
+}
+
+.container .USA {
+  border-radius: 6px;
+}
+
+.USA .container {
+  max-width: 100%;
+  padding-top: 100px;
+}
+
+.USA .wrapper {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  -webkit-animation: aniload .5s;
+    -moz-animation: aniload .5s;
+    -ms-animation: aniload .5s;
+    -o-animation: aniload .5s;
+    animation: aniload .5s;
+}
+
+.USA .landing {
+  position: absolute;
+  left:0;
+  width: 100%;
+  min-height: 100%;
+  background: url(http://api.ning.com/files/Ix8UmXYiXXoIt7TQNPEZJ6O0U*cQkKY6TvfFroXXvLGpfpL7seOavdRyE7g7RPIcCc1OCzkciaJfz7jdwm8tasswCE-3mzc*/ThinkAtheistUScapitol1920x1200.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.USA .shadow-offset {
+  margin-left: -50px;
+}
+
+.jumbotron .axel {
+  height: 475px;
+  background: url(../img/hero-axel.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .client-success {
+  height: 475px;
+  background: url(../img/hero-client-success.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .core-values {
+  height: 475px;
+  background: url(../img/hero-zees-up.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .crowdfunding {
+  height: 475px;
+  background: url(../img/hero-crowdfunding.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .epic-guarantee {
+  height: 475px;
+  background: url(../img/hero-guarantee.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+
+.jumbotron .expectations {
+  height: 475px;
+  background: url(../img/hero-our-assistants.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .fourohthree {
+  height: 475px;
+  background: url(../img/hero-403.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .fourohfour {
+  height: 475px;
+  background: url(../img/hero-404.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .fivehundred {
+  height: 475px;
+  background: url(../img/hero-500.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .how-it-works {
+  height: 475px;
+  background: url(../img/hero-how-it-works.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .joanna {
+  height: 475px;
+  background: url(../img/hero-joanna.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .our-story {
+  height: 475px;
+  background: url(../img/hero-zees-up.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .our-assistants {
+  height: 475px;
+  background: url(../img/hero-our-assistants.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .plans-pricing {
+  height: 475px;
+  background: url(../img/hero-plans-pricing.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .plans-pricing-signup-success {
+  height: 475px;
+  background: url(../img/hero-sign-up-success.jpg)
+    no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .press {
+  height: 475px;
+  background: url(../img/hero-press.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .referrals {
+  height: 475px;
+  background: url(../img/hero-referrals.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .shoshana {
+  height: 475px;
+  background: url(../img/hero-shoshana.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .testimonials {
+  height: 475px;
+  background-color: #8bc5eb;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .what-we-do {
+  height: 475px;
+  background: url(../img/hero-joanna.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .why-zirtual {
+  height: 475px;
+  background: url(../img/hero-why-zirtual.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .zirtual2_0 {
+  height: 475px;
+  background: url(../img/hero-zirtual-2_0.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .zirtual2_0-feedback {
+  height: 475px;
+  background: url(../img/hero-zirtual2_0-feedback.jpg)
+    no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .zirtual-away {
+  height: 475px;
+  background: url(../img/hero-zirtual-away.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.jumbotron .zirtual-plus {
+  height: 475px;
+  background: url(http://api.ning.com/files/Ix8UmXYiXXoIt7TQNPEZJ6O0U*cQkKY6TvfFroXXvLGpfpL7seOavdRyE7g7RPIcCc1OCzkciaJfz7jdwm8tasswCE-3mzc*/ThinkAtheistUScapitol1920x1200.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: #d3d3d3;
+  border-bottom-width: 1px;
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+@media screen and (min-width: 768px) {
+  .USA {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .container .USA {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .USA h1,
+  .USA .h1 {
+    font-size: 60px;
+  }
+}
+
+/*spacer play*/
+.spacer-play {
+  height: 0px;
+}
+
+@media (min-width: 320px) and (min-height: 200px) {
+  .spacer-play {
+    height: 0px;
+  }
+}
+
+@media (min-height: 400px) {
+  .spacer-play {
+    height: 10px;
+  }
+}
+
+@media (min-height: 500px) {
+  .spacer-play {
+    height: 25px;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+@media (min-height: 600px) {
+  .spacer-play {
+    height: 50px;
+  }
+}
+
+@media (min-height: 800px) {
+  .spacer-play {
+    height: 100px;
+  }
+}
+@media (min-height: 900px) {
+  .spacer-play {
+    height: 175px;
+  }
+}
+
