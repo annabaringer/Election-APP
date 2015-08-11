@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+</body>
+<footer>
+ <div class="container">
+      <div class="page-header">
+        <h1>Sticky footer</h1>
+      </div>
+      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
+      <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted">helloworld </p>
+			<script>
+				#footer {
+				   position:fixed;
+				   left:0px;
+				   bottom:0px;
+				   height:30px;
+				   width:100%;
+				   background:#999;
+				}
+
+				/* IE 6 */
+				* html #footer {
+				   position:absolute;
+				   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+			</script>
+		</p>
+      </div>
+    </div>
+</footer>
+</html>

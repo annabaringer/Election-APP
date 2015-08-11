@@ -1,0 +1,35 @@
+<html>
+<h2><span class="mw-headline" id="Recent_news">Recent news</span></h2>
+<p>This section displays the most recent stories in a google news search for the term <b>Yinka + Adeshina + Governor + Florida</b>
+</p>
+<dl>
+<dd><i>All stories may not be relevant to this page due to the nature of the search engine.</i>
+</dd>
+</dl>
+<p><b><span style="font-size:135%"><a target="_blank" class="external text" href="http://news.google.com/news?hl=en&amp;gl=us&amp;q=Yinka+Adeshina+Governor+Florida&amp;um=1&amp;ie=UTF-8&amp;output=rss">Yinka Adeshina News Feed</a></span></b>
+</p><p><ul id="rss2072841657"><li id="rss-loading2072841657"><em>Loading...</em></li></ul><script src="http://www.google.com/jsapi"></script><script type="text/javascript">google.load("feeds", "1");
+          function jsRSSonLoad2072841657() {
+              var feed_url = $("<div />").html("http://news.google.com/news?hl=en&amp;gl=us&amp;q=Yinka+Adeshina+Governor+Florida&amp;um=1&amp;ie=UTF-8&amp;output=rss").text();
+              var feed = new google.feeds.Feed(feed_url);
+              feed.setNumEntries(10);
+              feed.load(jsRSSfeedLoaded2072841657);
+          }
+          function  jsRSSfeedLoaded2072841657(result) {
+            if (!result.error) {
+              document.getElementById("rss2072841657").innerHTML = "";
+              for (var i = 0; i < result.feed.entries.length; i++) {
+                var entry = result.feed.entries[i];
+                var d = new Date(entry.publishedDate);
+                var date_str = (d.getMonth()+1) + "/" + d.getDate() + "/" + d.getFullYear();
+                document.getElementById("rss2072841657").innerHTML += '<li><a href="' + entry.link + '" target="_blank">' + entry.title + '</a> (' + date_str + ')</li>';
+              }
+	      if(result.feed.entries.length==0) document.getElementById("rss2072841657").innerHTML += '<li><em>This feed contains no news items right now.</em></li>';
+            } else {
+              document.getElementById("rss2072841657").innerHTML += '<li><em>Feed results are unavailable right now.</em></li>';
+            }
+            $("#rss-loading2072841657").hide();
+          }
+          google.setOnLoadCallback(jsRSSonLoad2072841657);
+        </script>
+</p>
+</html>

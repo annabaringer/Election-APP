@@ -1,295 +1,52 @@
-<html>
-<head>
-	<title>Pocket Poll</title>
-  	
-	<meta charset="utf-8"">
-	<link rel="stylesheet" href="C:\Users\GWCStudent\Desktop\themeroller\themesHereGoes.min.css" />
-	<link rel="stylesheet" href="C:\Users\GWCStudent\Desktop\themeroller\themes\jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-	<script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
-	<script>
-	//get a reference on our posts
-    var dataRef = new Firebase('https://pocketpoll.firebaseio.com');
-	</script>
-	
-	<script>
-		var officialsRef = dataRef.child("officials");
-		
-		   	officialsRef.set({
-    		rickscott: {
-    			date_of_birth: "December 1st, 1952 (age 61)",
-    			full_name: "Rick Scott",
-				first_elected: "Jan 4th, 2011",
-				position: "Governer",
-				party: "Republican",
-				religion: "Evangelical Chrisitan",
-				education: "University of Missouri (B.B.), Southern Methodist University (J.D.)",
-				policital_past: "Founded Conservatives for Patients' Rights (2009)",
-				profession: "Lawyer, Business Executive",
-    		},
-			
-			pambondi: {
-    			date_of_birth: "November 17, 1965 (age 48)",
-    			full_name: "Pam Bondi",
-				first_elected: "Jan 4th, 2011",
-				position: "Attorney General",
-				party: "Republican",
-				religion: "N/A",
-				education: "University of Florida (B.A.), Stetson University of Law (J.D.)",
-				policital_past: "Former prosecuter and spokeswomen in Hillsborough County, Florida where she worked as an Assistant State Attorney.",
-				profession: "Lawyer, Spokesperson",
-    		},
-			
-			jeffatwater: {
-    			date_of_birth: "April 8, 1958 (age 56)",
-    			full_name: "Jeff Atwater",
-				first_elected: "Jan 4th, 2011",
-				position: "Chief Financial Officer",
-				party: "Republican",
-				religion: "Roman Catholic",
-				education: "University of Florida (B.A.) (M.B.A.)",
-				policital_past: "Florida Representative (2000-2002); Florida Senator (2002-2010)",
-				profession: "Banker",
-    		},
-			
-			adamputnam: {
-    			date_of_birth: "July 31, 1974 (age 40)",
-    			full_name: "Adam Putnam",
-				first_elected: "Jan 4th, 2011",
-				position: "Agricultural Commisioner",
-				party: "Republican",
-				religion: "Episcopalian",
-				education: "University of Florida (B.S.)",
-				policital_past: "Florida Representative(1996-2001); US Representative (2001-2011)",
-				profession: "Farmer",
-    		},
-			
-			carloslopez-cantera: {
-    			date_of_birth: "December 29, 1973 (age 41)",
-    			full_name: "Carlos Lopez-Cantera",
-				first_elected: "February 3, 2014",
-				position: "Lieutenant Governer",
-				party: "Republican",
-				religion: "N/A",
-				education: "Miami-Dade Community College (A.A.); University of Miami (B.A.)",
-				policital_past: "Florida Representative (2004-2012); Majority Leader In Florida House of Representatives(2010-2012)",
-				profession: "Real Estate",
-    		},
-			
-			dongaetz: {
-    			date_of_birth: "January 22, 1947 (age 67)",
-    			full_name: "Don Gaetz",
-				first_elected: "2006",
-				position: "Senate President",
-				party: "Republican",
-				religion: "Lutheran",
-				education: "Concordia Univeristy (B.A.); Troy State University (M.P.A.)",
-				policital_past: "Seaside Town Chair(1990-91); Okaloosa Co. School Board(1994-2006)",
-				profession: "Business Executive",
-    		},
-			
-			willweatherford: {
-    			date_of_birth: "November 14, 1979 (age 41)",
-    			full_name: "Will Weatherford",
-				first_elected: "2006",
-				position: "Speaker of the House",
-				party: "Republican",
-				religion: "Chrisitan",
-				education: "Jacksonville University(B.A.)",
-				policital_past: "Legal Assistant to Allan Bense (2004-2006)",
-				profession: "Businessman",
-    		},
-    	});
-		
-	var candidatesRef = dataRef.child("candidates");
-		candidatesRef.set({
-		
-			charliecrist: {
-    			date_of_birth: "July 24, 1956 (age 58)",
-    			full_name: "Charlie Crist",
-				running_for: "Democratic Primary: Governer of Florida",
-				election_date: "August 26, 2014",
-				party: "Democrat",
-				religion: "Methodist",
-				education: "Wake Forest Univeristy;  Florida State University (B.A.); Samford Univeristy (J.D.)",
-				policital_past: "Florida Senator (1992-1998); Commisioner of Education, Florida (2000-2002); Attorney General, Florida (2002-2006); Governer of Florida (2006-2010)",
-				profession: "Attorney",
-    		},
-			
-			nanrich: {
-    			date_of_birth: "February 9, 1942 (age 72)",
-    			full_name: "Nan Rich",
-				running_for: "Democratic Primary: Governer of Florida",
-				election_date: "August 26, 2014",
-				party: "Democrat",
-				religion: "Jewish",
-				education: "University of Florida (1959-1961)",
-				policital_past: "Florida Representative (2000-2004); Florida Senator (2005-2012); Minority Policy Chair of Florida Senate (2006-2008); Governer of Florida (2006-2010); Minority Leader of Florida Senate (2010-2012)"
-				profession: "N/A",
-    		},
-			
-			elizabethcuevas_neuder: {
-    			date_of_birth: "March 30, 1954 (age 60)",
-    			full_name: "Elizabeth Cuevas-Neuder",
-				running_for: "Republican Primary: Governer of Florida",
-				election_date: "August 26, 2014",
-				party: "Republican",
-				religion: "Catholic",
-				education: "Miami academy of Beauty Culture; State University of New York",
-				policital_past: "13 Congressional Hispanic Leader (2005); Republican Precinct 131 Member (2006)"
-				profession: "CEO of Puerto Rican  Chamber of Commernce, Florida; Founder of 'El Mundo Hispanol en FL'",
-    		},
-			
-			faridkhavari: {
-    			date_of_birth: "February 25, 1943 (age 71)",
-    			full_name: "Farid Khavari",
-				running_for: "Independent Primary: Governer of Florida",
-				election_date: "August 26, 2014",
-				party: "Independent",
-				religion: "N/A",
-				education: "University of Hamburg; University of Bremen",
-				policital_past: ""
-				profession: "Economist , Author'",
-    		},
-			
-			adrianwyllie: {
-    			date_of_birth: "May 17, 1970 (age 44)",
-    			full_name: "Adrian Wyllie",
-				running_for: "Libertarian Primary: Governer of Florida",
-				election_date: "August 26, 2014",
-				party: "Libertarian",
-				religion: "Christian",
-				education: "Unknown",
-				policital_past: "Chairman of Chairman of the Libertarian Party of Florida (2011-2013)"
-				profession: "CEO'; radio personality",
-    		},
-		)};	
-		
-			$("a[data-role=tab]").each(function () {
-			var anchor = $(this);
-			anchor.bind("click", function () {
-				$.mobile.changePage(anchor.attr("href"), {
-					transition: "none",
-					changeHash: false
-				});
-				return false;
-			});
-		});
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-		$("div[data-role=page]").bind("pagebeforeshow", function (e, data) {
-			$.mobile.silentScroll(0);
-			$.mobile.changePage.defaults.transition = 'slide';
-		});
-		
-		$(function() {
-			$("#select-choice-1").change(function() {
-				window.location = $(this).val();
-			});        
-		});
+    <title>Select Your State</title>
 
-	</script>
-	<style>
-		* {
-			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 
-			"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-		}
-	
-		#listImg {
-			position:absolute; 
-			top:0; 
-			bottom:0; 
-			left:20; 
-			margin:auto;
-		}
-		
-		#bioImg {
-			top:0;
-			bottom:0;
-			left:20;
-			max-height: auto;
-			max-width:120;
-		}
-		
-		#bioHead {
-			text-align: center;
-			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-		}
-		
-		#bioP {
-			font-size: 11px;
-		}
-		
-		#logoC {
-			display: block;
-			position: auto;
-			max-height: 200;
-			max-width: auto;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		
-		h1 {
-			text-align: center;
-			font-family: "Arial Black", Gadget, sans-serif
-		}
-		
-		#startButtons {
-			display: block;
-			text-align:center;
-		}
-		
-		#startText {
-			text-align:center;
-			
-		}
-	
-		[data-role=navbar] .ui-btn-inner{
-			white-space: normal;
-			padding-right:1px;
-			padding-left:1px;
-		}
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
-		
-	</style>
-	
-</head>
-<body>
-<div id="home" data-role="page" data-theme="A">
-    <div>
-		<h1>Pocket Poll</h1>
-	</div>
-	
-	<div id="startText">
-		<h2>Government. Life. Balanced.</h2>
-		<h3>Change at your fingertips.</h3>
-		<h3>Start now.</h3>
-	</div>
-	
-    <div data-role="content ">
-		<div >
-			<img src="logo.png" id="logoC">
-		</div>
-			<div id="startButtons">
-				<a href="#map" data-role="button" data-theme="A" class=" ui-btn-inline">English</a>
-				<a href="#map" data-role="button" data-theme="A" class=" ui-btn-inline">Spanish</a>
-			</div>
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <a class="navbar-brand" href="#">PocketPoll</a>
+        </div>
+      </div>
     </div>
-	
-</div>
 
-<div id="map" data-role="page" style="background:#FFFFFF">
-    <div id="startText">
-		<h2>Select Your State</h2>
-	</div>
-	
-	<head>
-		<div style="padding: 0px;"></div>
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Choose Your State</h1>
+      </div>
+      <p class="lead"> 
+      <p>
+		<head>
+		<div class="container text-center">
 		<img id="themap" src="http://upload.wikimedia.org/wikipedia/en/d/d3/USA-states.PNG" 
 		usemap="#usa" style="width:680;height:443px;">
 		<map id="usa_image_map" name="usa">
-			
 			<area href="#" data-state="NJ" full="New Jersey" shape="rect" coords="656,185,711,198">
 			<area href="#" data-state="DE" full="Delaware" shape="rect" coords="665,204,711,216">
 			<area href="#" data-state="MD" full="Maryland" shape="rect" coords="667,223,711,235">
@@ -313,7 +70,7 @@
 			<area href="#" data-state="AK" shape="poly" coords="59,429,60,430,61,429,60,428,59,429">
 			<area href="#" data-state="AK" shape="poly" coords="65,420,66,424,68,425,72,422,75,421,74,419,74,417,73,418,71,418,71,417,73,417,76,416,77,415,74,414,75,413,73,414,70,417,66,419,65,420">
 			<area href="#" data-state="AK" shape="poly" coords="96,406,98,404,97,403,95,404,96,406">
-			<area href="#current" data-state="FL" full="Florida" shape="poly" coords="548,337,549,343,552,350,556,356,558,361,562,365,565,368,566,370,565,371,565,372,566,377,569,380,571,383,573,387,577,393,578,399,578,407,578,409,578,411,576,413,577,413,576,415,576,417,577,419,575,421,572,422,569,422,569,423,567,424,566,423,565,422,565,421,564,418,562,414,559,413,557,413,556,413,554,410,553,407,551,404,550,404,549,405,548,405,546,401,544,398,542,395,540,392,537,390,539,388,541,384,541,383,538,383,536,383,537,383,539,384,538,387,537,388,536,385,535,381,535,379,536,376,536,369,533,366,533,364,529,363,527,362,526,361,524,359,523,357,521,356,519,353,516,353,514,351,512,351,509,352,509,353,509,354,509,355,507,355,504,357,502,359,499,359,497,360,497,358,495,356,493,356,492,355,486,352,481,350,477,351,473,351,469,353,466,353,466,347,464,346,463,344,463,342,470,341,489,339,494,339,498,339,500,341,501,343,507,343,515,342,530,341,534,341,538,341,538,343,540,344,540,341,539,337,539,336,544,337,548,337">
+			<area href="#" data-state="FL" full="Florida" shape="poly" coords="548,337,549,343,552,350,556,356,558,361,562,365,565,368,566,370,565,371,565,372,566,377,569,380,571,383,573,387,577,393,578,399,578,407,578,409,578,411,576,413,577,413,576,415,576,417,577,419,575,421,572,422,569,422,569,423,567,424,566,423,565,422,565,421,564,418,562,414,559,413,557,413,556,413,554,410,553,407,551,404,550,404,549,405,548,405,546,401,544,398,542,395,540,392,537,390,539,388,541,384,541,383,538,383,536,383,537,383,539,384,538,387,537,388,536,385,535,381,535,379,536,376,536,369,533,366,533,364,529,363,527,362,526,361,524,359,523,357,521,356,519,353,516,353,514,351,512,351,509,352,509,353,509,354,509,355,507,355,504,357,502,359,499,359,497,360,497,358,495,356,493,356,492,355,486,352,481,350,477,351,473,351,469,353,466,353,466,347,464,346,463,344,463,342,470,341,489,339,494,339,498,339,500,341,501,343,507,343,515,342,530,341,534,341,538,341,538,343,540,344,540,341,539,337,539,336,544,337,548,337">
 			<area href="#" data-state="FL" shape="poly" coords="557,434,558,433,560,433,560,431,562,430,563,431,564,431,564,431,562,432,559,433,557,434,557,434">
 			<area href="#" data-state="FL" shape="poly" coords="566,430,567,431,569,429,573,426,576,423,578,419,578,417,578,415,578,415,577,417,576,420,574,425,571,428,568,428,566,430">
 			<area href="#" data-state="GA" full="Georgia" shape="poly" coords="500,274,497,275,490,275,484,276,484,278,484,279,485,281,487,287,489,295,490,299,491,302,492,308,494,312,495,314,496,317,497,317,497,319,496,323,496,325,496,326,497,329,497,333,497,335,497,336,498,336,498,339,500,341,501,343,507,343,515,342,530,341,534,341,538,341,538,343,540,344,540,341,539,337,539,336,544,337,548,337,547,332,548,325,550,322,549,320,552,315,551,314,551,314,548,314,548,312,547,310,545,308,544,308,542,304,540,299,537,299,536,297,535,295,533,293,532,293,530,290,528,289,524,287,524,287,523,284,522,284,520,280,518,280,515,278,513,277,513,276,514,275,515,274,515,272,514,272,510,273,505,274,500,274">
@@ -369,399 +126,66 @@
 			<area href="#" data-state="OK" full="Oklahoma" shape="poly" coords="272,248,264,248,260,248,260,248,260,256,275,257,298,258,296,275,296,288,296,289,299,292,301,293,302,293,302,291,303,293,305,293,305,291,307,293,306,295,309,296,311,296,314,296,316,298,317,296,320,297,322,299,323,299,323,301,324,302,326,300,327,300,329,300,329,302,333,304,334,303,335,300,336,300,337,302,340,302,343,303,345,304,347,303,347,301,350,301,351,302,353,300,354,300,355,302,358,302,359,300,360,300,362,302,364,304,366,304,368,305,368,278,367,270,367,264,366,259,365,254,365,251,356,251,322,251,290,249,272,248">
 			<area href="#" data-state="KS" full="Kansas" shape="poly" coords="365,251,356,251,322,251,290,249,272,248,275,200,291,201,320,203,352,203,356,203,359,205,361,205,362,206,362,208,360,209,360,210,362,213,363,215,365,216,366,225,365,251">
 			<area href="#" data-state="LA" full="Louisiana" shape="poly" coords="437,357,437,356,436,353,433,350,434,345,434,344,432,344,426,345,409,346,408,344,409,338,411,334,415,328,414,326,415,326,416,324,414,323,414,321,413,318,413,314,404,314,391,314,374,314,374,321,375,329,376,331,377,334,378,338,381,341,381,344,382,344,381,350,379,354,380,356,380,358,380,363,378,365,379,368,382,367,388,366,395,369,400,370,403,369,405,370,407,371,408,369,406,368,404,368,401,367,406,366,407,366,410,366,410,368,410,370,414,370,416,371,415,372,414,373,415,374,421,377,424,376,425,374,426,374,428,372,428,373,429,375,428,376,428,377,431,375,432,373,433,373,431,372,431,371,431,370,433,370,434,369,434,369,440,374,441,374,443,374,444,375,446,373,446,372,445,372,443,370,438,369,436,368,437,366,438,366,439,365,437,365,437,365,440,365,441,362,440,361,440,359,439,359,437,361,437,362,434,362,434,361,435,359,437,358,437,357">
+
 			</map>
-	</head>
-	<body>
+
+
+		</head>
+		<body>
 	<script>
-	var image = $('#themap');
+var image = $('#themap');
 
-	image.mapster({
-		clickNavigate: true,
-		mapKey: 'data-state',
-		render_select: {
-			fillColor: 'ff0000',
-			stroke: true,
-			strokeColor: '00ff00',
-			strokeWidth: 2
-		},
-		areas: [{
-			key: 'really-cold',
-			render_select: {
-				fillColor: '0000ff'
-			}
-			},
-			{
-				key: 'new-england',
-				render_select: {
-					fillColor: '44ff44'
-				}
-			}
-			]
-	});
+image.mapster({
+    clickNavigate: true,
+    mapKey: 'data-state',
+    render_select: {
+        fillColor: 'ff0000',
+        stroke: true,
+        strokeColor: '00ff00',
+        strokeWidth: 2
+    },
+    areas: [{
+        key: 'really-cold',
+        render_select: {
+            fillColor: '0000ff'
+        }
+        },
+        {
+            key: 'new-england',
+            render_select: {
+                fillColor: '44ff44'
+            }
+        }
+        ]
+});
 
-	// DEMO CONFIG CODE ONLY
-	$('.showhide').on('click', function() {
-		var link = $(this),
-			panel = $('.box-inner');
-		if (link.hasClass('hidden')) {
-			panel.show('slow');
-			link.removeClass('hidden');
-			link.text('[hide]');
-		} else {
-			panel.hide('slow');
-			link.addClass('hidden');
-			link.text('[show]');
-		}
-	});
-		</script>
-	</body>
-	
-</div>
+// DEMO CONFIG CODE ONLY
+$('.showhide').on('click', function() {
+    var link = $(this),
+        panel = $('.box-inner');
+    if (link.hasClass('hidden')) {
+        panel.show('slow');
+        link.removeClass('hidden');
+        link.text('[hide]');
+    } else {
+        panel.hide('slow');
+        link.addClass('hidden');
+        link.text('[show]');
+    }
+});
 
-<div id="current" data-role="page">
-    <div data-role="header" data-theme="A">
-        <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse">Back</a>
-        <h1>Current Officials</h1>
-    </div> <!--/header-->
-	
-    <div data-role="content">
-        <ul data-role="listview">
-			<li>
-			<a href="#Bioinfo">
-			<img src = "url.jpg" id="listImg">
-			<h2>Some Guy</h2>
-			<p>Description of the man</p>
-			<p>Party:</p>
-			<p>Position:</p>
-			</a></li>
-			
-			<li>
-			<a href="">
-			<img src = "john.jpg" id="listImg">
-			<h2>Another Guy</h2>
-			<p>Description of the man</p>
-			<p>Party:</p>
-			<p>Position:</p>
-			</a></li>
-			
-			<li>
-			<a href="">
-			<img src = "man.jpg" id="listImg">
-			<h2>More Men</h2>
-			<p>Description of the man</p>
-			<p>Party:</p>
-			<p>Position:</p>
-			</a></li>
-			
-			<li>
-			<a href="">
-			<img src = "man.jpg" id="listImg">
-			<h2>More Men</h2>
-			<p>Description of the man</p>
-			<p>Party:</p>
-			<p>Position:</p>
-			</a></li>
-			
-			<li>
-			<a href="">
-			<img src = "man.jpg" id="listImg">
-			<h2>More Men</h2>
-			<p>Description of the man</p>
-			<p>Party:</p>
-			<p>Position:</p>
-			</a></li>
-			
-			<li>
-			<a href="">
-			<img src = "man.jpg" id="listImg">
-			<h2>More Men</h2>
-			<p>Description of the man</p>
-			<p>Party:</p>
-			<p>Position:</p>
-			</a></li>
-			
-			<li>
-			<a href="">
-			<img src = "man.jpg" id="listImg">
-			<h2>More Men</h2>
-			<p>Description of the man</p>
-			<p>Party:</p>
-			<p>Position:</p>
-			</a></li>
-			
-			<li>
-			<a href="">
-			<img src = "man.jpg" id="listImg">
-			<h2>More Men</h2>
-			<p>Description of the man</p>
-			<p>Party:</p>
-			<p>Position:</p>
-			</a></li>
-			
-			<li>
-			<a href="">
-			<img src = "man.jpg" id="listImg">
-			<h2>More Men</h2>
-			<p>Description of the man</p>
-			<p>Party:</p>
-			<p>Position:</p>
-			</a></li>
-			
-			<li>
-			<a href="">
-			<img src = "man.jpg" id="listImg">
-			<h2>More Men</h2>
-			<p>Description of the man</p>
-			<p>Party:</p>
-			<p>Position:</p>
-			</a></li>
-		</ul>
-    </div>
-	
-    <div data-role="footer" data-position="fixed" data-theme="A">
-        <div data-role="navbar">
-            <ul>
-				<li><a href="#map" data-role="tab" data-icon="home">Home</a></li>
-                <li><a href="#current" data-role="tab" data-icon="star" class="ui-btn-active"">Officials</a></li>
-                <li><a href="#cand" data-role="tab" data-icon="search">Candidates</a></li>
-				<li><a href="#more" data-role="tab" data-icon="info">More</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
 
-<div id="cand" data-role="page">
-    <div data-role="header" data-theme="A">
-        <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse">Back</a>
-        <h1>Candidates</h1>
-    </div>
-	
-	<div data-role="fieldcontain" style="padding-left: 20">
-	   <label for="select-choice-1" class="select">Filter:</label>
-	   <select data-mini="true" data-inline="true">
-			<optgroup label="Parties">
-				<option value="express">All Parties</option>
-				<option value="standard">Democratic</option>
-				<option value="rush">Republican</option>
-			</optgroup>
-			<optgroup label="Branches">
-				  <option value="standard">Executive</option>
-				  <option value="rush">Legislative</option>
-				  <option value="express">Judicial</option>
-			</optgroup>
-	   </select>
-	</div>
-	
-	<div data-role="content" data-theme="A">
-		<ul data-role="listview">
-			<li>
-			<a href="#Bioinfo">
-			<img src = "url.jpg" id="listImg">
-			<h2>Some Guy</h2>
-			<p>Description of the man</p>
-			<p>Party:</p>
-			<p>Position:</p>
-			</a></li>
-	</div>
-	
-    <div data-role="footer" data-position="fixed" data-theme="A">
-        <div data-role="navbar">
-            <ul>
-				<li><a href="#map" data-role="tab" data-icon="home">Home</a></li>
-                <li><a href="#current" data-role="tab" data-icon="star">Officials</a></li>
-                <li><a href="#cand" data-role="tab" data-icon="search" class="ui-btn-active">Candidates</a></li>
-				<li><a href="#more" data-role="tab" data-icon="info">More</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div id="more" data-role="page">
-    <div data-role="header" data-theme="A">
-        <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse">Back</a>
-        <h1>More Info</h1>
-    </div>
-    <div data-role="content">
-        <a href="#faq">FAQ</a>
-    </div>
-	
-	
-    <div data-role="footer" data-position="fixed" data-theme="A">
-        <div data-role="navbar">
-            <ul>
-				<li><a href="#map" data-role="tab" data-icon="home">Home</a></li>
-                <li><a href="#current" data-role="tab" data-icon="star">Officials</a></li>
-                <li><a href="#cand" data-role="tab" data-icon="search">Candidates</a></li>
-                <li><a href="#more" data-role="tab" data-icon="info" class="ui-btn-active">More</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div id="faq" data-role="page">
-    <div data-role="header" data-theme="A">
-        <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse">Back</a>
-        <h1>FAQ</h1>
-    </div>
-    <div data-role="content">
-        <div data-role="collapsible">
-			<h3>What does this app do?</h3>
-			<p><strong>Millions of qualified citizens do not vote in state elections.</strong> With nearly anonymous candidates making decisions about education policies/constitutions/etc.
-			Bills are being passed without the approval of our citizens.</p>
-			<p>This app will help bring information about candidates to your fingertips, so that all you have to do
-			to make a difference in your community is register and go. You can view who is running, who is the current position holder, their basic biographical information,
-			their viewpoints, election dates, and more.</p>
-		</div>
-		<div data-role="collapsible">
-			<h3>What do I need to be eligible to vote?</h3>
-			<ul>
-				<li>You must be 18 or older (if you're 17, you can pre-register!)</li>
-				<li>You must be free of a felony/misdemeanor, depending on the laws in your state. </li>
-			</ul>
-			<a href="http://registertovote.org/state-info.html" data-role="button" data-theme="A" class=" ui-btn-inline"data-mini="true" >More information about voting</a>
-		</div>
-		<div data-role="collapsible">
-			<h3>How do I register to vote?</h3>
-			<p>If you meet the qualifications listed above, you can go to your local DMV or government office to register, or you can find the forms online to print below:</p>
-			<a href="https://registertovote.org/forms/register/registration/florida.html" data-role="button" data-theme="A" class=" ui-btn-inline"data-mini="true" >Registration forms</a>
-			<p>On average, registration takes place <strong>30 days</strong> before your local elections take place</p>
-			<p>You must provide photo ID and proof of residency. </p>
-		</div>
-		<div data-role="collapsible">
-			<h3>Where is my local poll?</h3>
-			<p>Once registration is complete, your poll location will be listed on your registration card.</p>
-		</div>
-		<div data-role="collapsible">
-			<h3>What are the laws in my state?</h3>
-			<p>If you need more information about the laws in your state to better make a decision about the bills your favourite candidate supports, <strong>click your state below.</strong> </p>
-			<div class="ui-field-contain">
-			  <label for="select-choice-1" class="select">Choose State:</label>
-			  <select name="select-choice-1" id="select-choice-1"  data-mini="true" data-inline="true">
-					<option data-placeholder="true">State...</option>
-					<option value="http://statutes.laws.com/alabama">AL</option>
-					<option value="http://statutes.laws.com/alaska">AK</option>
-					<option value="http://statutes.laws.com/arizona">AZ</option>
-					<option value="http://statutes.laws.com/arkansas">AR</option>
-					<option value="http://statutes.laws.com/california">CA</option>
-					<option value="http://statutes.laws.com/colorado">CO</option>
-					<option value="http://statutes.laws.com/connecticut">CT</option>
-					<option value="http://statutes.laws.com/delaware">DE</option>
-					<option value="http://statutes.laws.com/florida">FL</option>
-					<option value="http://statutes.laws.com/georgia">GA</option>
-					<option value="http://statutes.laws.com/hawaii">HI</option>
-					<option value="http://statutes.laws.com/idaho">ID</option>
-					<option value="http://statutes.laws.com/illinois">IL</option>
-					<option value="http://statutes.laws.com/indiana">IN</option>
-					<option value="http://statutes.laws.com/iowa">IA</option>
-					<option value="http://statutes.laws.com/kansas">KS</option>
-					<option value="http://statutes.laws.com/kentucky">KY</option>
-					<option value="http://statutes.laws.com/louisiana">LA</option>
-					<option value="http://statutes.laws.com/maine">ME</option>
-					<option value="http://statutes.laws.com/maryland">MD</option>
-					<option value="http://statutes.laws.com/massachusetts">MA</option>
-					<option value="http://statutes.laws.com/michigan">MI</option>
-					<option value="http://statutes.laws.com/minnesota">MN</option>
-					<option value="http://statutes.laws.com/mississippi">MS</option>
-					<option value="http://statutes.laws.com/missouri">MO</option>
-					<option value="http://statutes.laws.com/montana">MT</option>
-					<option value="http://statutes.laws.com/nebraska">NE</option>
-					<option value="http://statutes.laws.com/nevada">NV</option>
-					<option value="http://statutes.laws.com/newhampshire">NH</option>
-					<option value="http://statutes.laws.com/newjersey">NJ</option>
-					<option value="http://statutes.laws.com/newmexico">NM</option>
-					<option value="http://statutes.laws.com/newyork">NY</option>
-					<option value="http://statutes.laws.com/northcarolina">NC</option>
-					<option value="http://statutes.laws.com/northdakota">ND</option>
-					<option value="http://statutes.laws.com/ohio">OH</option>
-					<option value="http://statutes.laws.com/oklahoma">OK</option>
-					<option value="http://statutes.laws.com/oregon">OR</option>
-					<option value="http://statutes.laws.com/pennsylvania">PA</option>
-					<option value="http://statutes.laws.com/rhodeisland">RI</option>
-					<option value="http://statutes.laws.com/southcarolina">SC</option>
-					<option value="http://statutes.laws.com/southdakota">SD</option>
-					<option value="http://statutes.laws.com/pennsylvania">TN</option>
-					<option value="http://statues.laws.com/texas">TX</option>
-					<option value="http://statutes.laws.com/utah">UT</option>
-					<option value="http://statutes.laws.com/vermont">VT</option>
-					<option value="http://statutes.laws.com/virginia">VA</option>
-					<option value="http://statutes.laws.com/washington">WA</option>
-					<option value="http://statutes.laws.com/westvirginia">WV</option>
-					<option value="http://statutes.laws.com/wisconsin">WI</option>
-					<option value="http://statutes.laws.com/wyoming">WY</option>
-			  </select>
-			</div>
-		</div>
-    </div>
-	
-	
-    <div data-role="footer" data-position="fixed" data-theme="A">
-        <div data-role="navbar">
-            <ul>
-				<li><a href="#map" data-role="tab" data-icon="home">Home</a></li>
-                <li><a href="#current" data-role="tab" data-icon="star">Officials</a></li>
-                <li><a href="#cand" data-role="tab" data-icon="search">Candidates</a></li>
-                <li><a href="#more" data-role="tab" data-icon="info" class="ui-btn-active">More</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div id="Bioinfo" data-role="page">
-    <div data-role="header" data-theme="A">
-        <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse">Back</a>
-        <h1>Some Guy</h1>
-    </div>
-	<div>
-		<div data-role="content" style="float: left">
-			<img src="man.jpg" id="bioImg">
-		</div>
-		
-		<div data-role="content">
-			<div style="float: right;">
-				<p id="bioP"><strong>Full name:</strong> Joe Jim</p>
-				<p id="bioP"><strong>Office:</strong> The man, democratic </p>
-				<p id="bioP"><strong>First Elected:</strong> 2014</p>
-				<p id="bioP"><strong>Gender:</strong> Male obvi</p> 
-				<p id="bioP"><strong>Birth Date:</strong> old</p>
-				<p id="bioP"><strong>Birth Place:</strong> suburbs</p>
-				<p id="bioP"><strong>Home City:</strong> somewhere in FL</p>
-				<p id="bioP"><strong>Religion:</strong> Christian obvi</p>
-			</div>
-		</div>
-	</div>
-	
-		<div data-role="collapsible">
-			<h3>Education</h3>
-			<p>some college</p>
-		</div>
-		
-		<div data-role="collapsible">
-			<h3>Political Experience</h3>
-			<p>role and dates</p>
-			<p>more role and dates</p>
-		</div>
-		
-		<div data-role="collapsible">
-			<h3>Professional Experience</h3>
-			<p>role and dates</p>
-			<p>more role and dates</p>
-		</div>
-		
-		<div data-role="collapsible">
-			<h3>Organizations</h3>
-			<p>role and dates</p>
-			<p>more role and dates</p>
-		</div>
-
-    <div data-role="footer" data-position="fixed" data-theme="A">
-        <div data-role="navbar">
-            <ul>
-				<li><a href="#map" data-role="tab" data-icon="home">Home</a></li>
-                <li><a href="#current" data-role="tab" data-icon="star">Officials</a></li>
-                <li><a href="#cand" data-role="tab" data-icon="search">Candidates</a></li>
-                <li><a href="#more" data-role="tab" data-icon="info">More</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+	</script>
 </body>
+	  </p>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

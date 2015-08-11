@@ -1,0 +1,19 @@
+	<html>
+<header>
+	<script>
+		var equality = function( ) {
+			var text =  "Just keep coding";
+			console.log( text );
+		};
+	</script>
+</header>
+<body>
+	<script>
+		var x=women;
+		var y=men;
+		while (x!=y){
+			equality ( );
+		};
+	</script>
+</body>
+</html>
